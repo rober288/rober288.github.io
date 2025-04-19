@@ -8,7 +8,7 @@
 
 /* Header styling */
 header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2em;
 }
 
@@ -23,6 +23,21 @@ header {
 h2, h3 {
   font-size: 2em;
   color: rgb(0, 0, 0);
+}
+
+/* Link styles */
+a:link {
+  color: rgb(4, 106, 76);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(226, 132, 58);
+  text-decoration: underline;
 }
 
 /* Navigation styling */
@@ -44,13 +59,7 @@ nav li {
 nav a {
   color: rgb(4, 106, 76);
   font-size: 1.5em;
-  text-decoration: none;
   text-transform: uppercase;
-}
-
-nav a:hover {
-  color: rgb(226, 132, 58);
-  text-decoration: underline;
 }
 
 /* Content styling */
@@ -83,7 +92,9 @@ footer {
   color: rgb(0, 0, 0);
   padding: 2em 0;
   text-align: center;
-  background-image: url('Texturelabs_Paper_304L.jpg');
+  background-image: url('Phrogz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer .contact p {
@@ -91,14 +102,12 @@ footer .contact p {
 }
 
 footer .contact a {
-  color: rgb(4, 106, 76);
-  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 footer .contact a:hover {
-   color: rgb(226, 132, 58);
+  color: rgb(0, 0, 0);
   text-decoration: underline;
-  background-image: url('Texturelabs_Paper_304L.jpg');
 }
 
 footer hr {
