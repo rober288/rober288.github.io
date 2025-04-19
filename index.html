@@ -1,21 +1,30 @@
-
 <!DOCTYPE html>
-<html lang="language-en">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rory Roberts</title>
-        
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rasa:ital,wght@0,300..700;1,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
 </head>
-    
+
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Rory Roberts</h1>
-        <h2><i>Digital Design 2 (DSGN 272)</i></h2>
+        <h1 class="Name">Rory Roberts</h1>
+        <h2><em>Digital Design 2 (DSGN 272)</em></h2>
         <h3>Spring Quarter 2025</h3>
     </header>
 
+    <!-- NAVIGATION -->
     <nav>
         <ul>
             <li><a href="#">Project 1</a></li>
@@ -24,25 +33,42 @@
             <li><a href="#">Project 2 Process</a></li>
         </ul>
     </nav>
-    
-    <article>
-        <img src="Mouse-Profile-Photo.png"/>
-        <p>Hi, I'm Rory!</p>
-        <p>Thanks for checking out my portfolio!</p>
-        <p>I love to get deep into the roots of design. Especially when it comes to Branding and UX/UI. Beyond design; I love listening to vinyl's, painting, and swimming.</p>
-        <p> I'm always excited about new opportunities and collaborations — so let's make something amazing together!</p>
-        <p>Thanks for stopping by!</p> 
-    </article>
-    
-    <footer>
-            <p><Contact Me:<i>Roryrobertsdesign@gmail.com</i></p>
-            <a href="https://roryrobertsdesign.myportfolio.com">Check Out My Portfolio</a>
-        <br>
-        <hr> 
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+        <div class="profile-image">
+            <img src="Mouse-Profile-Photo.png" alt="Geometric Mouse Photo" />
+        </div>
+        <div class="text-content">
             <article>
-                <p>©2025 All Rights Reserved</p>
-            </article>  
+                <p>Hi, I'm Rory!</p>
+                <p>I love to get deep into the roots of design—especially when it comes to UX/UI. Beyond design, I love listening to vinyl, painting, and swimming.</p>
+                <p>I'm always excited about new opportunities and collaborations — so let's make something amazing together!</p>
+                <p>Thanks for stopping by!</p>
+            </article>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="contact">
+            <p>Contact Me:
+                <a href="mailto:Roryrobertsdesign@gmail.com">Roryrobertsdesign@gmail.com</a>
+            </p>
+            <p>
+                <a href="https://roryrobertsdesign.myportfolio.com" target="_blank" rel="noopener noreferrer">
+                    Check Out My Portfolio
+                </a>
+            </p>
+        </section>
+
+        <hr />
+
+        <section class="copyright">
+            <p>© 2025 Rory Roberts. All rights reserved.</p>
+        </section>
     </footer>
 
 </body>
+
 </html>
