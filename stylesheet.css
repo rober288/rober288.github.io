@@ -80,9 +80,10 @@ nav a:hover {
 /* Footer styling */
 footer {
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 2em 0;
   text-align: center;
+  background-image: url('Texturelabs_Paper_304L.jpg');
 }
 
 footer .contact p {
@@ -97,14 +98,15 @@ footer .contact a {
 footer .contact a:hover {
    color: rgb(226, 132, 58);
   text-decoration: underline;
+  background-image: url('Texturelabs_Paper_304L.jpg');
 }
 
 footer hr {
   margin: 1em 0;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 footer .copyright {
   font-size: 1em;
-  color: rgb(200, 200, 200);
+  color: rgb(0, 0, 0);
 }
