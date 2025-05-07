@@ -1,50 +1,47 @@
 /* General Reset */
 * {
-  font-family: "Space Mono", monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+/* Wrapper for centered layout */
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Header styling */
 header {
+  width: 100%;
+  padding: 5% 3%;
   text-align: left;
-  margin-bottom: 2em;
 }
 
 .Name {
   font-family: "Rubik Mono One", monospace;
   font-size: 9em;
-  color: #333333;
+  color: #333;
   text-transform: uppercase;
   line-height: 1.1em;
 }
 
 h2, h3 {
   font-size: 2em;
-  color: rgb(0, 0, 0);
-}
-
-/* Link styles */
-a:link {
-  color: rgb(4, 106, 76);
-  text-decoration: none;
-}
-
-a:visited {
-  color: rgb(0, 0, 0);
-}
-
-a:hover {
-  color: rgb(226, 132, 58);
-  text-decoration: underline;
+  color: #000;
 }
 
 /* Navigation styling */
 nav {
-  background-color: rgb(240, 240, 240);
+  width: 100%;
+  padding: 2% 0;
+  background-color: green;
   text-align: center;
-  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 nav ul {
@@ -52,25 +49,20 @@ nav ul {
 }
 
 nav li {
-  display: inline;
-  margin: 0 1em;
+  display: inline-block;
+  margin: 0 2%;
 }
 
 nav a {
-  color: rgb(4, 106, 76);
+  color: #ffffff;
   font-size: 1.5em;
   text-transform: uppercase;
 }
 
 /* Content styling */
 .content {
-  display: flex;
-  justify-content: space-between;
-  margin: 2em 5%;
-}
-
-.profile-image {
-  width: 40%;
+  margin-top: 10%; /* space below fixed nav */
+  padding: 5% 3%;
 }
 
 .profile-image img {
@@ -80,7 +72,6 @@ nav a {
 }
 
 .text-content {
-  width: 55%;
   font-size: 1.2em;
   line-height: 1.8em;
   text-align: justify;
@@ -88,34 +79,58 @@ nav a {
 
 /* Footer styling */
 footer {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-  padding: 2em 0;
+  width: 100%;
+  padding: 5% 3%;
+  background-color: #000;
+  color: #fff;
   text-align: center;
   background-image: url('Phrogz.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-footer .contact p {
-  font-size: 1.2em;
+  position: relative;
+  z-index: 1;
 }
 
 footer .contact a {
-  color: rgb(0, 0, 0);
+  color: #fff;
 }
 
 footer .contact a:hover {
-  color: rgb(0, 0, 0);
+  color: #fff;
   text-decoration: underline;
 }
 
 footer hr {
-  margin: 1em 0;
-  border: 1px solid rgb(0, 0, 0);
+  margin: 2% 0;
+  border: 1px solid #fff;
 }
 
 footer .copyright {
   font-size: 1em;
-  color: rgb(0, 0, 0);
+}
+
+/* Grid system (optional for later use) */
+.columns {
+  float: left;
+  padding: 1%;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/* Clearfix */
+#container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
