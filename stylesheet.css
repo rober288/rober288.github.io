@@ -1,10 +1,4 @@
-/* ========== CSS EXERCISE INSTRUCTIONS ========== */
-/* 
-In this exercise, you will position your elements on the page and create your layout. 
-You'll float elements and use positioning to remove them from the natural flow.
-*/
-
-/* 1. Clear browser default spacing */
+/* Clear browser default spacing */
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +6,14 @@ You'll float elements and use positioning to remove them from the natural flow.
   font-family: "Space Mono", monospace;
 }
 
-/* 2. Center website layout using a wrapper div */
+/* Center website layout using a wrapper div */
 #wrapper {
   width: 90%;
   margin: 0 auto;
   position: relative;
 }
 
-/* 3. Header styling */
+/* Header styling */
 header {
   width: 100%;
   padding: 5% 3%;
@@ -39,7 +33,7 @@ h2, h3 {
   color: #000;
 }
 
-/* 3. Navigation styling */
+/* Navigation styling */
 nav {
   width: 100%;
   padding: 2% 0;
@@ -66,7 +60,7 @@ nav a {
   text-transform: uppercase;
 }
 
-/* 4. Content organized with floated columns */
+/* Content organized with floated columns */
 .content {
   margin-top: 12%; /* offset for fixed nav */
   padding: 5% 3%;
@@ -91,7 +85,7 @@ nav a {
 .col-11 { width: 91.66%; }
 .col-12 { width: 100%; }
 
-/* Unique IDs for one-time styles (e.g., #container) */
+/* Unique IDs for one-time styles */
 #container {
   width: 80%;
   margin: auto;
@@ -111,7 +105,7 @@ nav a {
   text-align: justify;
 }
 
-/* 5. Footer styling */
+/* Footer styling */
 footer {
   width: 100%;
   padding: 5% 3%;
@@ -143,7 +137,7 @@ footer .copyright {
   font-size: 1em;
 }
 
-/* 6. Clearfix technique */
+/* Clearfix technique */
 #container::after {
   content: "";
   display: table;
