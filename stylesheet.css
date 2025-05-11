@@ -11,21 +11,33 @@
   width: 90%;
   margin: 0 auto;
   position: relative;
+  display: flex; /* Use flexbox for centering content */
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header styling */
 header {
+  height: 100vh;
   width: 100%;
-  padding: 5% 3%;
-  text-align: left;
+  background-image: url('Phrogz.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 .Name {
   font-family: "Rubik Mono One", monospace;
-  font-size: 9em;
+  font-size: 15vw;
   color: #333;
   text-transform: uppercase;
   line-height: 1.1em;
+  margin: 0;
 }
 
 h2, h3 {
@@ -52,6 +64,8 @@ nav a:hover {
 
 nav ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
@@ -65,50 +79,76 @@ nav a {
   text-transform: uppercase;
 }
 
-/* Content organized with floated columns */
+/* Main content - no floating columns anymore */
 .content {
-  margin-top: 0%;
+  margin-top: 10%;
   padding: 5% 3%;
-  overflow: auto; /* clear floats */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.columns {
-  float: left;
-  padding: 1%;
-}
-
-.col-1 { width: 8.33%; }
-.col-2 { width: 16.66%; }
-.col-3 { width: 25%; }
-.col-4 { width: 33.33%; }
-.col-5 { width: 41.66%; }
-.col-6 { width: 50%; }
-.col-7 { width: 58.33%; }
-.col-8 { width: 66.66%; }
-.col-9 { width: 75%; }
-.col-10 { width: 83.33%; }
-.col-11 { width: 91.66%; }
-.col-12 { width: 100%; }
-
-/* Unique IDs - One-Time Styles */
-#container {
-  width: 80%;
-  margin: auto;
-  position: relative;
-}
-
-/* Profile image and text content */
-.profile-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-right: 4%;
-}
-
+/* Profile text content */
 .text-content {
   font-size: 1.2em;
   line-height: 1.8em;
   text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Top projects styling */
+.top-projects {
+  padding: 5% 3%;
+}
+
+.top-projects h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 2%;
+}
+
+/* Now the projects are presented in a flex layout */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: center; /* Center the projects */
+}
+
+.project {
+  width: 48%;
+  background-color: #f7f7f7;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.project h3 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.project p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6em;
+}
+
+.project-images {
+  display: flex;
+  gap: 5%;
+  margin-top: 2%;
+}
+
+.project-image {
+  width: 48%;
+  border-radius: 0px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
 }
 
 /* Footer styling */
@@ -130,7 +170,7 @@ footer .contact a {
 }
 
 footer .contact a:hover {
-color: #ffcc00;
+  color: #ffcc00;
   text-decoration: underline;
 }
 
@@ -189,5 +229,3 @@ footer .copyright {
     width: 95%;
   }
 }
-
-
