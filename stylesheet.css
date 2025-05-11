@@ -11,7 +11,7 @@
   width: 90%;
   margin: 0 auto;
   position: relative;
-  display: flex; /* Use flexbox for centering content */
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -79,7 +79,7 @@ nav a {
   text-transform: uppercase;
 }
 
-/* Main content - no floating columns anymore */
+/* Main content */
 .content {
   margin-top: 10%;
   padding: 5% 3%;
@@ -108,7 +108,6 @@ nav a {
   margin-bottom: 2%;
 }
 
-/* Now the projects are presented in a flex layout */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -201,7 +200,7 @@ footer .copyright {
   }
 
   .Name {
-    font-size: 3em; /* Reduce heading size on mobile */
+    font-size: 3em;
   }
 
   nav li {
