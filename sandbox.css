@@ -1,0 +1,43 @@
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(255, 173, 72);
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Baby-The-Cat {
+  width: 100%;
+}
+
+.Baby-The-Cat-02 {
+    width: 100%;
+}
+
+.Baby-The-Cat-03 {
+    width: 100%;
+}
+
+h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 100;
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+}
