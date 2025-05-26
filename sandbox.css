@@ -11,8 +11,53 @@ main {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Animation for text to slide in from left */
+.intro-text {
+  position: relative;
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideInFromLeft {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* Animate Baby-The-Cat image on load */
 .Baby-The-Cat {
   width: 100%;
+  position: relative;
+  animation-name: slideInFromRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  /* Transition for hover effect */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect: gently scale up */
+.Baby-The-Cat:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes for sliding in from right */
+@keyframes slideInFromRight {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 .Baby-The-Cat-02 {
