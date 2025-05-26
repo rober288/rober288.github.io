@@ -1,8 +1,4 @@
-li {
-    display: inline;
-    list-style-type: none;
-}
-
+/* Global styles */
 body {
     background-color: rgb(255, 173, 72);
 }
@@ -11,15 +7,52 @@ main {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Animation for text to slide in from left */
-.intro-text {
-  position: relative;
-  animation-name: slideInFromLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+footer {
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Keyframes for sliding in from the left */
+/* Typography */
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 100;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Lists */
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+/* Lists */
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+/* Navigation / Header */
+#nav ul {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    width: fit-content;
+}
+
+#nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Keyframes for animations */
 @keyframes slideInFromLeft {
   from {
     left: -100%;
@@ -31,24 +64,6 @@ main {
   }
 }
 
-/* Animate Baby-The-Cat image on load */
-.Baby-The-Cat {
-  width: 100%;
-  position: relative;
-  animation-name: slideInFromRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-
-  /* Transition for hover effect */
-  transition: transform 0.3s ease;
-}
-
-/* Hover effect: gently scale up */
-.Baby-The-Cat:hover {
-  transform: scale(1.05);
-}
-
-/* Keyframes for sliding in from right */
 @keyframes slideInFromRight {
   from {
     left: 100%;
@@ -60,29 +75,34 @@ main {
   }
 }
 
+/* Animation usage */
+.intro-text {
+  position: relative;
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.Baby-The-Cat {
+  width: 100%;
+  position: relative;
+  animation-name: slideInFromRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  /* Transition for hover effect */
+  transition: transform 0.3s ease;
+}
+
+.Baby-The-Cat:hover {
+  transform: scale(1.05);
+}
+
+/* Additional images */
 .Baby-The-Cat-02 {
     width: 100%;
 }
 
 .Baby-The-Cat-03 {
     width: 100%;
-}
-
-h1 {
-  font-family: 'Rubik Mono One', sans-serif;
-  font-weight: 800;
-}
-
-h2 {
-  font-family: 'Rubik Mono One', sans-serif;
-  font-weight: 100;
-}
-
-
-p {
-    font-family: 'Poppins', sans-serif;
-}
-
-footer {
-    font-family: 'Poppins', sans-serif;
 }
