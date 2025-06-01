@@ -1,7 +1,4 @@
 /* Global styles */
-body {
-    background-color: rgb(255, 173, 72);
-}
 
 main {
     font-family: 'Poppins', sans-serif;
@@ -9,6 +6,11 @@ main {
 
 footer {
     font-family: 'Poppins', sans-serif;
+}
+
+/*  Page-Specific Styles: Sandbox Page */
+body.sandbox-page {
+  background-color: rgb(255, 173, 72);
 }
 
 /* Typography */
