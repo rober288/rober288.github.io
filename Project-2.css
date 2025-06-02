@@ -2,27 +2,29 @@
 body {
   font-family: 'Libre Bodoni', serif;
   font-weight: 400;
-  font-size: 16px;       /* base font size */
+  font-size: 16px;
   line-height: 1.6;
-  color: #222;           /* dark text for readability */
+  color: #0f0e0e;
   margin: 0;
   padding: 0;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   font-family: 'Libre Bodoni', serif;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0.5em;
   color: #000000;
-  line-height: 1.2;
+  line-height: 1.5;
+  margin-left: 20px;
 }
 
 /* Sizes and styles for headings */
 h1 {
-  font-size: 4rem;    /* roughly 36px */
+  font-size: 4rem;
   letter-spacing: -0.03em;
+  font-weight: 275;
 }
 
 h2 {
@@ -36,11 +38,10 @@ h3 {
 
 /* Paragraph / Body text */
 p {
-  font-size: 2rem;
+  font-size: 1.82rem;
   margin-bottom: 1.5em;
-  font-weight: 400;
-  line-height: .1;
-  color: #333;
+  font-weight: 10;
+  color: hwb(0 9% 91%);
 }
 
 
@@ -50,3 +51,24 @@ img {
   height: auto;
   display: block;
 }
+
+/* Beet Page Styling */
+.Beet .row {
+  display: flex;
+  align-items: center; /* vertically center items */
+}
+
+
+
+/* Potato */
+.three.Images .row {
+  display: flex;
+}
+
+.three.Images img {
+  height: 300px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
