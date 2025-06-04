@@ -75,14 +75,17 @@ img {
 
 .Beet h1 {
   color: #9c2f7d;
+  padding-left: 70px;
 }
 
 .Beet p {
   color: #9c2f7d;
   line-height: 1.6;
+  padding-left: 70px;
 }
 
 /* Potato */
+
 .Potato h1 {
   color: #8a6c36;
   padding-left: 120px;
@@ -92,6 +95,15 @@ img {
   color: #8a6c36;
   padding-left: 120px;
 }
+
+.potato-1 {
+  margin-top: 4rem;
+}
+
+.potato-2 {
+  margin-top: 9rem;
+}
+
 
 /* Rhubarb */
 .Rhubarb h1 {
@@ -110,4 +122,16 @@ img {
 
 .rhubarb-text {
   top: -10rem;
+}
+
+
+/* Radish */
+.radish-text {
+  margin-top: 12rem;
+}
+
+/* Lettuce */
+.lettuce-photo {
+  width: 150%;
+  height: auto;
 }
