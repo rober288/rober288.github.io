@@ -1,30 +1,48 @@
+/* Container & Positioning */
+.container {
+  max-width: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+
 /* Base font family for body */
 body {
   font-family: 'Libre Bodoni', serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.6;
   color: #0f0e0e;
   margin: 0;
   padding: 0;
 }
 
-/* Headings */
+
+/* Typography Base */
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Libre Bodoni', serif;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  color: #000000;
-  line-height: 1.5;
-  margin-left: 20px;
+  color: #0f0e0e;
+  margin: 0;
 }
 
-/* Sizes and styles for headings */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  padding-top: 50px;
+}
+
 h1 {
   font-size: 4rem;
+  font-weight: 275; /* overrides the 700 above */
   letter-spacing: -0.03em;
-  font-weight: 275;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -36,10 +54,10 @@ h3 {
   font-size: 2.2rem;
 }
 
-/* Paragraph / Body text */
+
+/* Paragraphs */
 p {
   font-size: 1.82rem;
-  margin-bottom: 1.5em;
   font-weight: 10;
   color: hwb(0 9% 91%);
 }
@@ -52,23 +70,44 @@ img {
   display: block;
 }
 
-/* Beet Page Styling */
-.Beet .row {
-  display: flex;
-  align-items: center; /* vertically center items */
+
+/* Beet */
+
+.Beet h1 {
+  color: #9c2f7d;
 }
 
-
+.Beet p {
+  color: #9c2f7d;
+  line-height: 1.6;
+}
 
 /* Potato */
-.three.Images .row {
-  display: flex;
+.Potato h1 {
+  color: #8a6c36;
+  padding-left: 120px;
 }
 
-.three.Images img {
-  height: 300px;
-  width: auto;
-  display: block;
-  object-fit: contain;
+.Potato p {
+  color: #8a6c36;
+  padding-left: 120px;
 }
 
+/* Rhubarb */
+.Rhubarb h1 {
+  color: #9f2571;
+  padding-left: 40px;
+}
+
+.Rhubarb p {
+  color: #9f2571;
+  padding-left: 40px;
+}
+
+.Rhubarb {
+  margin-top: 9rem;
+}
+
+.rhubarb-text {
+  top: -10rem;
+}
